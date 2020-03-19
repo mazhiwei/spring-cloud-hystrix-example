@@ -16,5 +16,8 @@ eureka:
 
 turbine:
   clusterNameExpression: new String("default")
-  appConfig: HYSTRIX-EXAMPLE-SERVICE,HYSTRIX-EXAMPLE-SERVICE2,CUSTOMER-CLIENT-SERVICE
+  # ,HYSTRIX-EXAMPLE-SERVICE2,CUSTOMER-CLIENT-SERVICE
+  appConfig: HYSTRIX-EXAMPLE-SERVICE
   combineHostPort: true
+  aggregator:
+    clusterConfig: default
